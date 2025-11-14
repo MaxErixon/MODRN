@@ -1393,3 +1393,9 @@ section {
     height: 220px;
   }
 }
+
+#site-wrapper > header:nth-child(1) {
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+}

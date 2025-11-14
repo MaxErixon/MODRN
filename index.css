@@ -178,7 +178,8 @@ section {
 }
 
 .header-glass {
-  position: sticky;
+  position: fixed;
+  width: 100% ;
   top: 0;
   z-index: 40;
   backdrop-filter: blur(16px);
@@ -1392,10 +1393,4 @@ section {
   .service-detail figure img {
     height: 220px;
   }
-}
-
-#site-wrapper > header:nth-child(1) {
-  position: fixed;
-  width: 100%;
-  z-index: 200;
 }

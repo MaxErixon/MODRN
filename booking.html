@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boka tid – MODRN Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#020202',
+                charcoal: '#0a0a0a',
+                slate: '#161616',
+                silver: '#f2f2f2',
+                muted: '#9a9a9a',
+                accent: '#ffffff',
+              },
+            },
+            boxShadow: {
+              glow: '0 20px 60px -25px rgba(255, 255, 255, 0.18)',
+            },
+          },
+        },
+        darkMode: 'class',
+      };
+    </script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="bg-brand-dark text-brand-silver font-inter antialiased">
+    <div class="min-h-screen flex flex-col">
+      <header data-component="site-header"></header>
+
+      <main class="flex-1" data-page="booking">
+        <section class="page-hero">
+          <div
+            class="page-hero__background"
+            style="background-image: url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1600&q=80&sat=-100');"
+            aria-hidden="true"
+          ></div>
+          <div class="page-hero__overlay" aria-hidden="true"></div>
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="page-hero__content" data-motion="fade">
+              <div class="eyebrow">Boka</div>
+              <h1>Boka din tid hos MODRN</h1>
+              <p>
+                Välj barberare, behandling och tid via Bokadirekt. Bekräftelsen landar direkt i din inkorg och du kan justera din tid fram till 24 timmar före besöket.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20">
+          <div class="mx-auto max-w-4xl px-6 text-center space-y-8" data-motion="fade">
+            <h2 class="text-3xl font-semibold text-white">Snabbt, smidigt och tillgängligt</h2>
+            <p class="text-brand-silver/80">
+              Onlinebokningen gör det enkelt att se lediga tider, välja din favoritbarberare och bekräfta på några sekunder. Du får en bekräftelse direkt och kan enkelt boka om vid behov.
+            </p>
+            <a
+              href="https://www.bokadirekt.se/places/modrn-barbershop-60483"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary inline-flex"
+              aria-label="Öppna MODRN bokning på Bokadirekt"
+            >
+              Boka via Bokadirekt
+            </a>
+            <p class="text-sm text-brand-silver/60">
+              Behöver du hjälp? Kontakta oss på <a href="tel:+4640123456" class="link-accent">+46 (0)40 123 456</a> eller skicka ett mejl till <a href="mailto:hello@modrnbarber.se" class="link-accent">hello@modrnbarber.se</a>.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer data-component="site-footer"></footer>
+    </div>
+
+    <script defer src="https://unpkg.com/@motionone/dom/dist/motion-one.umd.js"></script>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
+

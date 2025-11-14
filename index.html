@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODRN – Din barbershop i hjärtat av staden</title>
+    <meta
+      name="description"
+      content="MODRN erbjuder professionell hårklippning, skäggvård och grooming-upplevelser i hjärtat av Malmö."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#020202',
+                charcoal: '#0a0a0a',
+                slate: '#161616',
+                silver: '#f2f2f2',
+                muted: '#9a9a9a',
+                accent: '#ffffff',
+              },
+            },
+            boxShadow: {
+              glow: '0 20px 60px -25px rgba(255, 255, 255, 0.18)',
+            },
+          },
+        },
+        darkMode: 'class',
+      };
+    </script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="bg-brand-dark text-brand-silver font-inter antialiased">
+    <div id="site-wrapper" class="min-h-screen flex flex-col">
+      <header data-component="site-header"></header>
+
+      <main class="flex-1" data-page="home">
+        <section class="hero-section">
+          <div
+            class="hero-section__background"
+            style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80&sat=-100');"
+            aria-hidden="true"
+          ></div>
+          <div class="hero-section__overlay" aria-hidden="true"></div>
+          <div class="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-32 lg:flex-row lg:items-center">
+            <div class="hero-section__content" data-motion="fade">
+              <div class="eyebrow">MODRN — Din barbershop i hjärtat av staden</div>
+              <h1>Modern barbering med klassisk känsla</h1>
+              <p>
+                En salong skapad för den moderna mannen som uppskattar hantverk, känsla och perfektion. Kliv in, luta dig tillbaka och låt oss ta hand om din stil.
+              </p>
+              <div class="hero-section__actions" role="group" aria-label="Primära åtgärder">
+                <a href="https://www.bokadirekt.se/places/modrn-barbershop-131308" class="btn-primary" aria-label="Boka tid hos MODRN">Boka tid</a>
+                <a href="services.html" class="btn-secondary" aria-label="Se tjänster hos MODRN">Se tjänster</a>
+              </div>
+              <dl class="hero-section__metrics" aria-label="Snabbfakta om MODRN">
+                <div>
+                  <dt>10+</dt>
+                  <dd>Års erfarenhet</dd>
+                </div>
+                <div>
+                  <dt>4.9</dt>
+                  <dd>Betyg från gäster</dd>
+                </div>
+                <div>
+                  <dt>3</dt>
+                  <dd>Dedikerade barberare</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="hero-section__media" data-motion="fade">
+              <div class="hero-section__frame">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80" alt="Premiumverktyg på arbetsbänken" />
+                <div class="hero-section__badge">
+                  <span>Herrklippning</span>
+                  <strong>fr. 430 kr</strong>
+                </div>
+              </div>
+              <div class="hero-section__detail">
+                <img src="https://images.unsplash.com/photo-1621645582931-d1d3e6564943?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Detalj av MODRN:s interiör" />
+                <div>
+                  <p>Föreningsgatan 5, Malmö</p>
+                  <span>Öppet Mån–Lör</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-intro">
+          <div class="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+            <article class="section-intro__story" data-motion="fade">
+              <h2>En modern salong med känsla för detaljer</h2>
+              <p>
+                MODRN är skapat för dig som vill ha en upplevelse lika genomtänkt som resultatet. Vår salong kombinerar mörka, lugna material med varm belysning, mjuka former och en ljudbild som låter dig koppla av.
+              </p>
+              <p>
+                Vi arbetar metodiskt med varje kund – från konsultation och håranalys till stylingtips som gör att din look håller längre. Resultatet: en stil som känns lika rätt till vardags som till fest.
+              </p>
+              <a href="about.html" class="link-accent">Läs mer om vår filosofi</a>
+            </article>
+            <ul class="section-intro__stats" data-motion="fade">
+              <li data-motion="fade">
+                <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Premiumverktyg på arbetsbänken" />
+                <div>
+                  <h3>Premiumverktyg</h3>
+                  <p>Vi arbetar med noggrant utvalda produkter och verktyg för en skonsam, precis finish.</p>
+                </div>
+              </li>
+              <li data-motion="fade">
+                <img src="https://plus.unsplash.com/premium_photo-1677444398670-4f5aaaef65eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kund som får traditionell rakning" />
+                <div>
+                  <h3>Tradition &amp; teknik</h3>
+                  <p>Vår metod mixar klassiska tekniker med nutida trender och formkänsla.</p>
+                </div>
+              </li>
+              <li data-motion="fade">
+                <img src="https://images.unsplash.com/photo-1573588546512-2ace898aa480?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Interiördetaljer från salongen" />
+                <div>
+                  <h3>Salongsmiljö</h3>
+                  <p>Ett avskilt rum i hjärtat av Malmö med lounge-känsla och personligt bemötande.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section-services">
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="section-services__header">
+              <div>
+                <h2>Tjänster i fokus</h2>
+                <p>Våra mest efterfrågade behandlingar – designade för en stil som håller.</p>
+              </div>
+              <a href="services.html" class="btn-outline">Alla tjänster</a>
+            </div>
+            <div class="section-services__grid">
+              <article class="service-card" data-motion="fade">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80" alt="Herrklippning med precision" />
+                </figure>
+                <div class="service-card__body">
+                  <div class="service-card__meta">
+                    <span class="service-card__category">Herrklippning</span>
+                    <span class="service-card__duration">45 min</span>
+                  </div>
+                  <h3>Signature Cut</h3>
+                  <p>Detaljerad klippning, tvätt och styling för en matt och formfast finish.</p>
+                  <div class="service-card__footer">
+                    <span class="service-card__price">430 kr</span>
+                    <a href="https://www.bokadirekt.se/places/modrn-barbershop-131308" class="service-card__link">Boka</a>
+                  </div>
+                </div>
+              </article>
+              <article class="service-card" data-motion="fade">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Skäggdesign hos MODRN" />
+                </figure>
+                <div class="service-card__body">
+                  <div class="service-card__meta">
+                    <span class="service-card__category">Skägg</span>
+                    <span class="service-card__duration">30 min</span>
+                  </div>
+                  <h3>Beard Architecture</h3>
+                  <p>Skäggtrimning med rakkniv, formning av kanter och återfuktande behandling.</p>
+                  <div class="service-card__footer">
+                    <span class="service-card__price">290 kr</span>
+                    <a href="https://www.bokadirekt.se/places/modrn-barbershop-131308" class="service-card__link">Boka</a>
+                  </div>
+                </div>
+              </article>
+              <article class="service-card" data-motion="fade">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1653875700329-a7c8aca94c95?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ansiktsbehandling i salong" />
+                </figure>
+                <div class="service-card__body">
+                  <div class="service-card__meta">
+                    <span class="service-card__category">Hudvård</span>
+                    <span class="service-card__duration">40 min</span>
+                  </div>
+                  <h3>Urban Facial Reset</h3>
+                  <p>Rengöring, peeling, massage och kylande mask för en hud som andas.</p>
+                  <div class="service-card__footer">
+                    <span class="service-card__price">520 kr</span>
+                    <a href="https://www.bokadirekt.se/places/modrn-barbershop-131308" class="service-card__link">Boka</a>
+                  </div>
+                </div>
+              </article>
+              <article class="service-card" data-motion="fade">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1672642150262-6edcbffa463e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Trådning och vaxning" />
+                </figure>
+                <div class="service-card__body">
+                  <div class="service-card__meta">
+                    <span class="service-card__category">Trådning &amp; vaxning</span>
+                    <span class="service-card__duration">25 min</span>
+                  </div>
+                  <h3>Precision Detailing</h3>
+                  <p>Skonsam formning av bryn, kinder och hals med avslutande kylmask.</p>
+                  <div class="service-card__footer">
+                    <span class="service-card__price">260 kr</span>
+                    <a href="https://www.bokadirekt.se/places/modrn-barbershop-131308" class="service-card__link">Boka</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-reviews">
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="section-reviews__header">
+              <div>
+                <h2>Kunder om MODRN</h2>
+                <p>Våra gäster uppskattar känslan, hantverket och precisionen.</p>
+              </div>
+              <div class="section-reviews__controls">
+                <button class="testimonial-nav" aria-label="Föregående omdöme" data-action="prev">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button class="testimonial-nav" aria-label="Nästa omdöme" data-action="next">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+            <div class="section-reviews__track" aria-live="polite">
+              <div class="testimonial-track"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-team">
+          <div class="section-team__background" aria-hidden="true"></div>
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="section-team__header">
+              <h2>Möt teamet</h2>
+              <p>Tre barberare med olika styrkor men samma mål – din skarpaste look hittills.</p>
+            </div>
+            <div class="section-team__grid">
+              <article class="team-card" data-motion="fade">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1582893561942-d61adcb2e534?q=80&w=991&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Porträtt av Dida" />
+                </figure>
+                <div class="team-card__body">
+                  <div class="team-card__header">
+                    <h3>Dida</h3>
+                    <span>Lead Barber &amp; grundare</span>
+                  </div>
+                  <p>Mer än tio års erfarenhet av skräddarsydda klippningar, fade-teknik och styling som håller formen.</p>
+                  <ul>
+                    <li>Expert på moderna fades</li>
+                    <li>Rådgivning om hårvård &amp; styling</li>
+                    <li>Personlig konsultation varje session</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="team-card" data-motion="fade">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1693756222675-a4b88ff09975?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Porträtt av Lawan" />
+                </figure>
+                <div class="team-card__body">
+                  <div class="team-card__header">
+                    <h3>Lawan</h3>
+                    <span>Skäggspecialist</span>
+                  </div>
+                  <p>Skapar symmetri och skärpa i varje skägg. Kombinerar traditionell rakning med moderna tekniker.</p>
+                  <ul>
+                    <li>Rakkniv &amp; konturer</li>
+                    <li>Skäggvård med premiumprodukter</li>
+                    <li>Personliga rutiner för hemmavård</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="team-card" data-motion="fade">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1717700921740-a1440f3b89a4?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Porträtt av Mohammed" />
+                </figure>
+                <div class="team-card__body">
+                  <div class="team-card__header">
+                    <h3>Mohammed</h3>
+                    <span>Grooming Expert</span>
+                  </div>
+                  <p>Specialist på hudvård, trådning och vaxning. Säkerställer en komplett look med maximal komfort.</p>
+                  <ul>
+                    <li>Ansiktsbehandlingar &amp; massage</li>
+                    <li>Trådning och vaxning med precision</li>
+                    <li>Kundanpassade behandlingsplaner</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-cta">
+          <div class="section-cta__background" aria-hidden="true"></div>
+          <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center">
+            <div class="section-cta__eyebrow">Boka din nästa upplevelse</div>
+            <h2>Välj barberare, tid och behandling på några sekunder</h2>
+            <p>
+              Vi finns här för att skapa en look som känns lika rätt idag som imorgon. Boka din tid online och låt oss förbereda salongen för dig.
+            </p>
+            <div class="section-cta__actions">
+              <a href="https://www.bokadirekt.se/places/modrn-barbershop-131308" class="btn-primary" aria-label="Gå till bokningssidan">Boka tid nu</a>
+              <a href="tel:+4640123456" class="btn-secondary" aria-label="Ring MODRN">Ring oss</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="h-[420px] w-full overflow-hidden">
+          <iframe
+            title="Google Maps MODRN Malmö"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.615092200958!2d13.000881077348605!3d55.60281300478007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a1efc2f5657d%3A0xae0c0a7c1d7cc031!2sFöreningsgatan%205%2C%20211%2044%20Malmö!5e0!3m2!1ssv!2sse!4v1730920800000!5m2!1ssv!2sse"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </main>
+
+      <footer data-component="site-footer"></footer>
+    </div>
+
+    <script defer src="https://unpkg.com/@motionone/dom/dist/motion-one.umd.js"></script>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galleri – MODRN Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#020202',
+                charcoal: '#0a0a0a',
+                slate: '#161616',
+                silver: '#f2f2f2',
+                muted: '#9a9a9a',
+                accent: '#ffffff',
+              },
+            },
+            boxShadow: {
+              glow: '0 20px 60px -25px rgba(255, 255, 255, 0.18)',
+            },
+          },
+        },
+        darkMode: 'class',
+      };
+    </script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="bg-brand-dark text-brand-silver font-inter antialiased">
+    <div class="min-h-screen flex flex-col">
+      <header data-component="site-header"></header>
+
+      <main class="flex-1" data-page="gallery">
+        <section class="page-hero">
+          <div
+            class="page-hero__background"
+            style="background-image: url('https://images.unsplash.com/photo-1611313151697-d626e818dddf?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
+            aria-hidden="true"
+          ></div>
+          <div class="page-hero__overlay" aria-hidden="true"></div>
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="page-hero__content" data-motion="fade">
+              <div class="eyebrow">Galleri</div>
+              <h1>Ögonblick, detaljer och uttryck från MODRN</h1>
+              <p>
+                Utforska vårt galleri med frisyrer, skäggstilar samt interiör- och detaljbilder från salongen. Tryck på en bild för att öppna den i helskärm.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20">
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="masonry-grid" role="list">
+              <button class="gallery-item" data-image="https://plus.unsplash.com/premium_photo-1661288502656-7265af3e6b23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" aria-label="Visa frisyr i helskärm" role="listitem">
+                <img src="https://plus.unsplash.com/premium_photo-1661288502656-7265af3e6b23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fade-klippning hos MODRN" />
+              </button>
+              <button class="gallery-item" data-image="https://plus.unsplash.com/premium_photo-1742275430206-6fcf772c6634?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" aria-label="Visa nyklippt frisyr" role="listitem">
+                <img src="https://plus.unsplash.com/premium_photo-1742275430206-6fcf772c6634?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bakifrån på en nyklippt frisyr" />
+              </button>
+              <button class="gallery-item" data-image="https://plus.unsplash.com/premium_photo-1742909963787-1f74fc54628a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" aria-label="Visa skäggdesign i helskärm" role="listitem">
+                <img src="https://plus.unsplash.com/premium_photo-1742909963787-1f74fc54628a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Skäggdesign på MODRN" />
+              </button>
+              <button class="gallery-item" data-image="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" aria-label="Visa styling i helskärm" role="listitem">
+                <img src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Detalj från stylingprocess" />
+              </button>
+              <button class="gallery-item" data-image="https://images.unsplash.com/photo-1741345980762-9eb594e6fd31?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" aria-label="Visa stylingverktyg i helskärm" role="listitem">
+                <img src="https://images.unsplash.com/photo-1741345980762-9eb594e6fd31?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Detaljer från arbetsbänken" />
+              </button>
+              <button class="gallery-item" data-image="https://images.unsplash.com/photo-1643402438180-b9476249a48b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" aria-label="Visa rakkniv" role="listitem">
+                <img src="https://images.unsplash.com/photo-1643402438180-b9476249a48b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rakkniv och barberartillbehör" />
+              </button>
+              <button class="gallery-item" data-image="https://images.unsplash.com/photo-1672761431799-5e91a0ae2f60?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" aria-label="Visa salongsinteriör i helskärm" role="listitem">
+                <img src="https://images.unsplash.com/photo-1672761431799-5e91a0ae2f60?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Interiör från salongen" />
+              </button>
+              <button class="gallery-item" data-image="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1400&q=80" aria-label="Visa hårstyling" role="listitem">
+                <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80" alt="Styling av kort hår" />
+              </button>
+              <button class="gallery-item" data-image="https://images.unsplash.com/photo-1654097800183-574ba7368f74?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" aria-label="Visa färdig frisyr" role="listitem">
+                <img src="https://images.unsplash.com/photo-1654097800183-574ba7368f74?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Färdig frisyr med textur" />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Bildvisare">
+          <button class="lightbox__close" aria-label="Stäng bildvisare">×</button>
+          <img class="lightbox__image" src="" alt="Visad bild från galleriet" />
+        </div>
+      </main>
+
+      <footer data-component="site-footer"></footer>
+    </div>
+
+    <script defer src="https://unpkg.com/@motionone/dom/dist/motion-one.umd.js"></script>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
+

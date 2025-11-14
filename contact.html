@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt – MODRN Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#020202',
+                charcoal: '#0a0a0a',
+                slate: '#161616',
+                silver: '#f2f2f2',
+                muted: '#9a9a9a',
+                accent: '#ffffff',
+              },
+            },
+            boxShadow: {
+              glow: '0 20px 60px -25px rgba(255, 255, 255, 0.18)',
+            },
+          },
+        },
+        darkMode: 'class',
+      };
+    </script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="bg-brand-dark text-brand-silver font-inter antialiased">
+    <div class="min-h-screen flex flex-col">
+      <header data-component="site-header"></header>
+
+      <main class="flex-1" data-page="contact">
+        <section class="page-hero">
+          <div
+            class="page-hero__background"
+            style="background-image: url('https://images.unsplash.com/photo-1650802570222-ea35ea019c1b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
+            aria-hidden="true"
+          ></div>
+          <div class="page-hero__overlay" aria-hidden="true"></div>
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="page-hero__content" data-motion="fade">
+              <div class="eyebrow">Kontakt</div>
+              <h1>Vi ser fram emot att höra från dig</h1>
+              <p>
+                Kontakta oss för bokningar, frågor eller rådgivning. Du når oss via telefon, e-post eller genom formuläret nedan – vi svarar alltid så snabbt vi kan.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20">
+          <div class="mx-auto max-w-6xl px-6 grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:items-start">
+            <div class="space-y-12">
+              <div class="contact-info">
+                <h2>Besök salongen</h2>
+                <p>MODRN – Din barbershop i hjärtat av staden</p>
+                <ul>
+                  <li>
+                    <span>Adress</span>
+                    <p>Föreningsgatan 5<br />211 44 Malmö</p>
+                  </li>
+                  <li>
+                    <span>Telefon</span>
+                    <a href="tel:+4640123456">+46 (0)40 123 456</a>
+                  </li>
+                  <li>
+                    <span>E-post</span>
+                    <a href="mailto:hello@modrnbarber.se">hello@modrnbarber.se</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contact-info">
+                <h2>Öppettider</h2>
+                <ul>
+                  <li><span>Mån–Fre</span><p>10:00–19:00</p></li>
+                  <li><span>Lördag</span><p>11:00–18:00</p></li>
+                  <li><span>Söndag</span><p>Stängt</p></li>
+                </ul>
+              </div>
+
+              <div class="overflow-hidden rounded-3xl border border-brand-slate/60">
+                <iframe
+                  title="Google Maps MODRN Malmö"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.615092200958!2d13.000881077348605!3d55.60281300478007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a1efc2f5657d%3A0xae0c0a7c1d7cc031!2sFöreningsgatan%205%2C%20211%2044%20Malmö!5e0!3m2!1ssv!2sse!4v1730920800000!5m2!1ssv!2sse"
+                  width="100%"
+                  height="320"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="form-card" data-motion="fade">
+              <h2 class="text-2xl font-semibold text-white">Skicka ett meddelande</h2>
+              <p class="mt-2 text-sm text-brand-silver/70">
+                Formuläret är förberett för att kopplas till en Next.js server action. I denna statiska version simulerar vi svaret.
+              </p>
+              <form id="contactForm" class="mt-8 space-y-6" aria-describedby="formStatus">
+                <div class="field">
+                  <label for="name">Namn</label>
+                  <input type="text" id="name" name="name" placeholder="Ditt namn" required autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="email">E-post</label>
+                  <input type="email" id="email" name="email" placeholder="namn@exempel.se" required autocomplete="email" />
+                </div>
+                <div class="field">
+                  <label for="message">Meddelande</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Berätta hur vi kan hjälpa dig" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full" aria-label="Skicka meddelande till MODRN">Skicka meddelande</button>
+                <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer data-component="site-footer"></footer>
+    </div>
+
+    <script defer src="https://unpkg.com/@motionone/dom/dist/motion-one.umd.js"></script>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
+

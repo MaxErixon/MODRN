@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om oss – MODRN Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#020202',
+                charcoal: '#0a0a0a',
+                slate: '#161616',
+                silver: '#f2f2f2',
+                muted: '#9a9a9a',
+                accent: '#ffffff',
+              },
+            },
+            boxShadow: {
+              glow: '0 20px 60px -25px rgba(255, 255, 255, 0.18)',
+            },
+          },
+        },
+        darkMode: 'class',
+      };
+    </script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="bg-brand-dark text-brand-silver font-inter antialiased">
+    <div class="min-h-screen flex flex-col">
+      <header data-component="site-header"></header>
+
+      <main class="flex-1" data-page="about">
+        <section class="page-hero">
+          <div
+            class="page-hero__background"
+            style="background-image: url('https://images.unsplash.com/photo-1647140655311-b36dc374a95a?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
+            aria-hidden="true"
+          ></div>
+          <div class="page-hero__overlay" aria-hidden="true"></div>
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="page-hero__content" data-motion="fade">
+              <div class="eyebrow">Om MODRN</div>
+              <h1>Precision, känsla och personligt bemötande</h1>
+              <p>
+                MODRN föddes ur ambitionen att skapa en barbershop där modern teknik möter klassiskt hantverk. Vi vill ge varje gäst en stunds andrum – en plats där du kliver in som du är och lämnar med en look som känns lika rätt som den ser ut.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20">
+          <div class="mx-auto max-w-6xl px-6 grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-start">
+            <article class="space-y-6" data-motion="fade">
+              <h2 class="text-3xl font-semibold text-white">Vår berättelse</h2>
+              <p class="text-brand-silver/80 leading-relaxed">
+                Sedan starten har vi fokuserat på tre saker: erfarenhet, precision och kundens komfort. Med över 20 års samlad erfarenhet har vi finjusterat våra tekniker och valt de bästa verktygen för att leverera resultat som håller, oavsett om det gäller en enkel trimning eller en komplett make-over.
+              </p>
+              <p class="text-brand-silver/80 leading-relaxed">
+                Salongen är designad för att kännas som ett andra vardagsrum. Dämpad belysning, noga utvalda detaljer och lugn musik skapar ett rum där du kan koppla av. Vi tror på samtalet, på lyhördhet och på att förstå vem du är – först då kan vi skapa en stil som verkligen representerar dig.
+              </p>
+              <p class="text-brand-silver/80 leading-relaxed">
+                Vi strävar efter att ständigt utvecklas genom utbildning, trendspaning och nära samarbeten med leverantörer. Det innebär att du alltid får de senaste teknikerna och produkterna, samtidigt som vi håller fast vid det tidlösa hantverket.
+              </p>
+            </article>
+            <aside class="space-y-6" data-motion="fade">
+              <div class="aside-card">
+                <h3>Vår filosofi</h3>
+                <ul>
+                  <li>Lyhördhet för din personliga stil</li>
+                  <li>Högprecisionsteknik och traditionella metoder</li>
+                  <li>Premiumprodukter och hållbara rutiner</li>
+                  <li>En atmosfär där du kan slappna av</li>
+                </ul>
+              </div>
+              <div class="aside-card">
+                <h3>Vårt löfte</h3>
+                <p>
+                  Vi levererar resultat som känns lika bra som de ser ut. Hos oss får du alltid en detaljerad konsultation, personliga rekommendationer och en avslappnad stund bortom vardagens tempo.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="bg-brand-charcoal/70 py-20">
+          <div class="mx-auto max-w-6xl px-6">
+            <h2 class="text-3xl font-semibold text-white text-center">Teamet bakom MODRN</h2>
+            <p class="mt-4 text-brand-silver/80 text-center max-w-2xl mx-auto">
+              Vi är tre barberare med olika specialiteter men med samma drivkraft – att ge dig en känsla av självförtroende och ett uttryck som håller.
+            </p>
+            <div class="mt-12 grid gap-10 md:grid-cols-3">
+              <article class="team-card">
+                <img src="https://images.unsplash.com/photo-1582893561942-d61adcb2e534?q=80&w=991&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Porträtt av Dida" class="team-photo" />
+                <div class="team-card__body">
+                  <div class="team-card__header">
+                    <h3>Dida</h3>
+                    <span>Lead Barber &amp; grundare</span>
+                  </div>
+                  <p>Mer än tio års erfarenhet av skräddarsydda klippningar, fade-teknik och styling som håller formen.</p>
+                  <ul>
+                    <li>Expert på moderna fades</li>
+                    <li>Rådgivning om hårvård &amp; styling</li>
+                    <li>Personlig konsultation varje session</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="team-card">
+                <img src="https://images.unsplash.com/photo-1693756222675-a4b88ff09975?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Porträtt av Lawan" class="team-photo" />
+                <div class="team-card__body">
+                  <div class="team-card__header">
+                    <h3>Lawan</h3>
+                    <span>Skäggspecialist</span>
+                  </div>
+                  <p>Skapar symmetri och skärpa i varje skägg. Kombinerar traditionell rakning med moderna tekniker.</p>
+                  <ul>
+                    <li>Rakkniv &amp; konturer</li>
+                    <li>Skäggvård med premiumprodukter</li>
+                    <li>Personliga rutiner för hemmavård</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="team-card">
+                <img src="https://images.unsplash.com/photo-1717700921740-a1440f3b89a4?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Porträtt av Mohammed" class="team-photo" />
+                <div class="team-card__body">
+                  <div class="team-card__header">
+                    <h3>Mohammed</h3>
+                    <span>Grooming Expert</span>
+                  </div>
+                  <p>Specialist på hudvård, trådning och vaxning. Säkerställer en komplett look med maximal komfort.</p>
+                  <ul>
+                    <li>Ansiktsbehandlingar &amp; massage</li>
+                    <li>Trådning och vaxning med precision</li>
+                    <li>Kundanpassade behandlingsplaner</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20">
+          <div class="mx-auto max-w-5xl px-6 text-center space-y-8" data-motion="fade">
+            <h2 class="text-3xl font-semibold text-white">Vi är här för att lyfta din vardag</h2>
+            <p class="text-brand-silver/80">
+              Varje klippning, trimning och behandling är ett samarbete. Tillsammans hittar vi balansen mellan det moderna och det klassiska – med dig i centrum.
+            </p>
+            <a href="https://www.bokadirekt.se/places/modrn-barbershop-131308" class="btn-primary inline-flex">Boka din tid</a>
+          </div>
+        </section>
+      </main>
+
+      <footer data-component="site-footer"></footer>
+    </div>
+
+    <script defer src="https://unpkg.com/@motionone/dom/dist/motion-one.umd.js"></script>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
+
